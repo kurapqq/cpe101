@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./scripts.js"></script>  
+    <link rel="icon" type="image/png" href="./imgs/kurapika.png">
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <header>
+        <a href="#" class="logo-holder">
+            <div class="logo">cpe101</div>
+            <div class="logo-text">Portfolio Website</div>
+        </a>
+        <nav>
+            <ul id="menu">
+
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#skill">Skills</a>
+                </li>
+                <li>
+                    <a href="#edu">Education</a>
+                </li>
+                <li>
+                    <a href="#con">Contact Me</a>
+                </li>
+            </ul>
+
+            <a href="#" class="mobile-toggle" onClick="toggleMobileMenu();">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/>
+                  </svg>
+                
+            </a>
+
+        </nav>
+    </header>
+    <main>
+        <section class="hero container">
+            <div class="hero-blue">
+                 <div>
+                    <h1><small>Hi I'm</small>
+                        Garunyapas Danpitakkul
+                    </h1>
+                    <p>
+                        My name is Garunyapas Danpitakkul, but you can call me Vieng.
+                        I am currently a student at King Mongkut's University of Technology Thonburi 
+                        (KMUTT), where I am pursuing my degree with a focus on Computer Engineering. 
+                        I have a strong passion for technology and innovation, which drives my academic 
+                        and personal projects.
+                    </p>
+                    <div class="call-to-action">
+                        <a href="#con" class="button black">
+                            Contact me
+                        </a>
+                    </div>
+                 </div>
+            </div>
+            <div class="hero-yellow">
+                <img src="./imgs/vieng.jpg" alt="Avatar" width="100%">
+            </div>
+
+        </section>
+        
+        <section id="skill" class="hero container">
+            <div class="hero-yelloww">
+                 <div>
+                    <h1>
+                         Skill
+                    </h1>
+                    <ul id="list">
+
+                        <li>
+                            Html
+                        </li>
+                        <li>
+                            Css
+                        </li>
+                        <li>
+                            Javascript
+                        </li>
+                        <li>
+                            C
+                        </li>
+                        <li>
+                            Python
+                        </li>
+                    </ul>
+                 </div>
+            </div>
+            
+
+        </section>
+    </main>
+    <section class="logos container">
+        <div class="marquee">
+            <div class="track">
+                <img src="imgs/CSS3_logo.svg.png" alt="CSS" width="128">
+                <img src="imgs/HTML5_Badge.svg.png" alt="HTML" width="128">
+                <img src="imgs/javascript-1.svg" alt="JS" width="128">
+                <img src="imgs/c.png" alt="c" width="128">
+                <img src="imgs/Python-logo-notext.svg.png" alt="c" width="128">
+                <img src="imgs/CSS3_logo.svg.png" alt="CSS" width="128">
+                <img src="imgs/HTML5_Badge.svg.png" alt="HTML" width="128">
+                <img src="imgs/javascript-1.svg" alt="JS" width="128">
+                <img src="imgs/c.png" alt="c" width="128">
+                <img src="imgs/Python-logo-notext.svg.png" alt="c" width="128">
+                <img src="imgs/CSS3_logo.svg.png" alt="CSS" width="128">
+                <img src="imgs/HTML5_Badge.svg.png" alt="HTML" width="128">
+                <img src="imgs/javascript-1.svg" alt="JS" width="128">
+                <img src="imgs/c.png" alt="c" width="128">
+                <img src="imgs/Python-logo-notext.svg.png" alt="c" width="128">
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="edu" class="hero container">
+        <div class="hero-bluee">
+            <div>
+                <h1>
+                    Education
+                </h1>
+                <p>
+                    <br>
+                    <b>2024 - Present</b>
+                    <br>
+                    <br>
+                    King Mongkut's University of Technology Thonburi (KMUTT),
+                     a top university in Thailand specializing in engineering
+                      and technology.
+                </p>
+                <br>
+                <img src="/imgs/kmutt.jpg" alt="kmutt">
+             </div>
+            </div>
+    </section>
+
+
+
+
+    
+
+    
+    <section id="con" class="contact-section">
+        <div class="contact-intro">
+          <h2 class="contact-title">Get in Touch</h2>
+          <p class="contact-description">
+            Fill out the form below and we'll get back to you as soon as possible.
+          </p>
+        </div>
+      
+        <form class="contact-form" method="POST">
+      
+          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+          <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+          <input type="hidden" name="from_name" value="My Website" />
+
+      
+          <div class="form-group-container">
+            <div class="form-group">
+              <label for="name" class="form-label">Name</label>
+              <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
+            </div>
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone</label>
+              <input id="phone" name="phone" class="form-input" placeholder="+1 (234) 56789" type="text" />
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
+            </div>
+          </div>
+          <button class="form-submit" type="submit">Send Message</button>
+        </form>
+      
+      </section>
+
+
+</body>
+</html>
